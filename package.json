@@ -1,0 +1,20 @@
+{
+  "name": "arabic-malayalam-transliterator",
+  "version": "1.0.0",
+  "description": "A lightweight and efficient JavaScript library for transliterating Malayalam text into Arabic script",
+  "homepage": "https://github.com/naswihmohd/arabic-malayalam-transliterator#readme",
+  "bugs": {
+    "url": "https://github.com/naswihmohd/arabic-malayalam-transliterator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naswihmohd/arabic-malayalam-transliterator.git"
+  },
+  "license": "ISC",
+  "author": "naswih_mohd",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
