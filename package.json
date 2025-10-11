@@ -14,6 +14,18 @@
   "author": "naswih_mohd",
   "type": "commonjs",
   "main": "index.js",
+  "keywords": [
+    "arabic-malayalam-transliterator",
+    "arabic-script",
+    "malayalam-transliterator",
+    "javascript",
+    "text-conversion",
+    "language-conversion",
+    "script-conversion",
+    "malayalam-to-arabic-conversion",
+    "malayalam-to-arabic-transliterator",
+    "malayalam-to-arabic-transliteration"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
