@@ -1,5 +1,5 @@
 
-const malayalamToArabicMap = {
+const malayalamToArabicMap: Record<string, string> = {
     // Independent vowels (സ്വരങ്ങൾ) - All 13 Malayalam vowels
     "അ": "اَ", "ആ": "اٰ", "ഇ": "اِ", "ഈ": "اِی", "ഉ": "اُ", "ഊ": "اُو",
     "ഋ": "رْ", "ൠ": "رّْ", "ഌ": "لْ", "ൡ": "لّْ",
@@ -31,7 +31,7 @@ const malayalamToArabicMap = {
     "൹": "۔", // Malayalam period
 };
 
-const vowelSigns = {
+const vowelSigns: Record<string, string> = {
     // Dependent vowel signs (matras) - Malayalam vowel diacritics
     "ാ": "ا",    // ā (long a)
     "ി": "ِ",    // i (short i)
@@ -53,7 +53,7 @@ const vowelSigns = {
 };
 
 // Special clusters mapping (consonant clusters)
-const specialClusters = {
+const specialClusters: Record<string, string> = {
     // Common consonant clusters
     "ച്ച": "چَّ",   // cca → چّ
     "ജ്ജ": "جَّ",   // jja → جج
@@ -85,11 +85,16 @@ const specialClusters = {
     "സം": "سَمْ",   // sama → 
 };
 
-function isVowelSign(char) {
+function isVowelSign(char: string): boolean {
     return Object.prototype.hasOwnProperty.call(vowelSigns, char);
 }
 
-function transliterateToArabic(malayalamText) {
+/**
+ * Transliterates Malayalam text to Arabic script
+ * @param malayalamText - The Malayalam text to transliterate
+ * @returns The transliterated Arabic text
+ */
+function transliterateToArabic(malayalamText: string): string {
     let result = "";
 
     for (let i = 0; i < malayalamText.length; i++) {
@@ -141,4 +146,5 @@ function transliterateToArabic(malayalamText) {
     return result;
 }
 
-module.exports = transliterateToArabic
+export default transliterateToArabic;
+
