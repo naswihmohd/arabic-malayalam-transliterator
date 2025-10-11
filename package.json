@@ -1,6 +1,6 @@
 {
   "name": "arabic-malayalam-transliterator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A lightweight and efficient JavaScript library for transliterating Malayalam text into Arabic script",
   "homepage": "https://github.com/naswihmohd/arabic-malayalam-transliterator#readme",
   "bugs": {
